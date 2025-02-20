@@ -10,21 +10,44 @@
 <body>
     <header>
         <img src="logo.png" alt="Steambird Logo">
-        <h1>The Steambird - Fontaine’s Finest (and Funniest) News</h1>
+        <h1>The Steambird</h1>
     </header>
 
-    <div class="container">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#calendar">Calendar</a></li>
+            <li><a href="#submit">Submit a Sighting</a></li>
+        </ul>
+    </nav>
+
+    <section class="container" id="articles">
         <h2>Latest Articles</h2>
         <ul id="articles-list"></ul>
-    </div>
+    </section>
 
-    <div class="container">
+    <section class="container" id="calendar">
+        <h2>Upcoming Investigations</h2>
+        <ul>
+            <li><strong>March 5:</strong> The Truth Behind the Dandelion Sea</li>
+            <li><strong>March 12:</strong> Fontaine’s Deep-Sea Secrets</li>
+            <li><strong>March 19:</strong> The Case of the Vanishing Slimes</li>
+        </ul>
+    </section>
+
+    <section class="container" id="submit">
         <h2>Submit Your Own Funny Sightings</h2>
         <form id="submission-form">
             <input type="text" id="name" placeholder="Your Name" required>
             <textarea id="description" placeholder="Describe what you saw..." required></textarea>
             <button type="submit">Submit</button>
         </form>
-    </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 The Steambird - All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
