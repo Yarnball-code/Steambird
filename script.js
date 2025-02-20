@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const articlesList = document.getElementById("articles-list");
             data.forEach(article => {
                 let listItem = document.createElement("li");
-                listItem.innerHTML = `<strong>${article.title}</strong> - ${article.date}<br>${article.content}`;
+                listItem.innerHTML = `<h3>${article.title}</h3><p><strong>${article.date}</strong></p><p>${article.content}</p>`;
                 articlesList.appendChild(listItem);
             });
         });
