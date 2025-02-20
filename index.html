@@ -4,50 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Steambird</title>
-    <script defer src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Steambird Logo">
         <h1>The Steambird</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="articles.html">Articles</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="submit.html">Submit a Sighting</a>
+        </nav>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#articles">Articles</a></li>
-            <li><a href="#calendar">Calendar</a></li>
-            <li><a href="#submit">Submit a Sighting</a></li>
-        </ul>
-    </nav>
-
-    <section class="container" id="articles">
+    
+    <section id="latest-articles">
         <h2>Latest Articles</h2>
-        <ul id="articles-list"></ul>
+        <div class="polaroid">
+            <a href="birds-slime.html">
+                <img src="images/birds-slime.jpg" alt="Birds and Slime Mystery">
+                <p><strong>Birds, Slime, and a Mitachurl - A Secret Alliance?</strong></p>
+                <p>Our investigation into Fontaine’s most bizarre creature coalition...</p>
+            </a>
+        </div>
+        <div class="polaroid">
+            <a href="vanishing-slimes.html">
+                <img src="images/vanishing-slimes.jpg" alt="Vanishing Slimes">
+                <p><strong>The Case of the Vanishing Slimes</strong></p>
+                <p>Slimes have been disappearing all across Teyvat...</p>
+            </a>
+        </div>
     </section>
-
-    <section class="container" id="calendar">
-        <h2>Upcoming Investigations</h2>
-        <ul>
-            <li><strong>March 5:</strong> The Truth Behind the Dandelion Sea</li>
-            <li><strong>March 12:</strong> Fontaine’s Deep-Sea Secrets</li>
-            <li><strong>March 19:</strong> The Case of the Vanishing Slimes</li>
-        </ul>
-    </section>
-
-    <section class="container" id="submit">
-        <h2>Submit Your Own Funny Sightings</h2>
-        <form id="submission-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <textarea id="description" placeholder="Describe what you saw..." required></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-
+    
     <footer>
-        <p>&copy; 2025 The Steambird - All rights reserved.</p>
+        <p>&copy; 2025 The Steambird. All Rights Reserved.</p>
     </footer>
+</body>
+</html>
+
 </body>
 </html>
 
