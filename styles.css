@@ -1,107 +1,80 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 .container {
     width: 80%;
     margin: auto;
+    overflow: hidden;
     background: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Header & Navigation */
+/* Header & Navbar */
 header {
-    background: #003366;
+    background: #004d99;
     color: white;
-    padding: 15px;
+    padding: 10px 0;
     text-align: center;
 }
 
-header h1 {
+.logo {
+    font-size: 2em;
     margin: 0;
-    font-size: 2.5em;
 }
 
-nav {
-    margin-top: 10px;
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: #003366;
+    padding: 10px 0;
 }
 
-nav a {
+.navbar a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
+    padding: 10px 20px;
+    transition: background 0.3s;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.navbar a:hover {
+    background: #0055cc;
+    border-radius: 5px;
 }
 
-/* Main Content */
-h1, h2, h3 {
-    color: #003366;
-}
-
-p {
-    line-height: 1.6;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 5px 0;
-    padding-left: 15px;
-    position: relative;
-}
-
-ul li::before {
-    content: '\2022';
-    color: #003366;
-    font-weight: bold;
-    position: absolute;
-    left: 0;
-}
-
-/* Quote */
-.quote {
-    font-style: italic;
-    background: #e0e0e0;
+/* Polaroid Effect (for Home Page) */
+.polaroid {
+    background: white;
     padding: 10px;
-    border-left: 5px solid #003366;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.polaroid img {
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    font-style: italic;
+    color: #666;
+    margin-top: 10px;
 }
 
 /* Footer */
 footer {
-    background: #003366;
-    color: white;
     text-align: center;
     padding: 10px;
+    background: #004d99;
+    color: white;
     margin-top: 20px;
 }
 
-/* Back to Home Button */
-.home-button {
-    display: block;
-    width: 200px;
-    margin: 20px auto;
-    padding: 10px;
-    text-align: center;
-    background: #003366;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.home-button:hover {
-    background: #0055aa;
-}
