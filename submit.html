@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Steambird - Submit a Sighting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="submit.html">Submit a Sighting</a></li>
+        </ul>
+    </nav>
+
+    <h1>Submit a Sighting</h1>
+    <form id="sighting-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" required>
+
+        <label for="details">Details:</label>
+        <textarea id="details" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
