@@ -1,34 +1,51 @@
 /* General Page Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
 /* Navbar Styling */
 header {
-    background-color: #003366;
+    background-color: #222;
     color: white;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
 }
 
 .navbar {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    padding: 10px;
+    background: #333;
+    padding: 10px 0;
 }
 
 .navbar a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 1.2em;
 }
 
 .navbar a:hover {
-    text-decoration: underline;
+    background: #555;
+    border-radius: 5px;
+}
+
+/* Main Content */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #222;
 }
 
 /* Polaroid Effect for Home Page */
@@ -38,12 +55,15 @@ header {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
     margin: 20px auto;
-    width: 60%;
+    width: 300px;
+    border-radius: 10px;
 }
 
 .polaroid img {
     width: 100%;
-    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .caption {
@@ -53,18 +73,6 @@ header {
 }
 
 /* Articles Page Styling */
-.container {
-    max-width: 800px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2, h3 {
-    color: #003366;
-}
-
 ul {
     list-style-type: none;
     padding: 0;
@@ -79,7 +87,7 @@ ul li {
 .home-button {
     display: block;
     text-align: center;
-    background: #003366;
+    background: #444;
     color: white;
     padding: 10px;
     text-decoration: none;
@@ -88,14 +96,14 @@ ul li {
 }
 
 .home-button:hover {
-    background: #002244;
+    background: #666;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 10px;
-    background: #003366;
+    background: #222;
     color: white;
     margin-top: 20px;
 }
