@@ -7,73 +7,88 @@ body {
     color: #333;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    background: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Header & Navbar */
+/* Header Styles */
 header {
-    background: #004d99;
+    background-color: #003366;
     color: white;
-    padding: 10px 0;
+    padding: 20px;
     text-align: center;
 }
 
 .logo {
     font-size: 2em;
-    margin: 0;
+    font-weight: bold;
 }
 
+/* Navbar Styles */
 .navbar {
     display: flex;
     justify-content: center;
-    background: #003366;
-    padding: 10px 0;
+    background: #002244;
+    padding: 10px;
 }
 
 .navbar a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
-    transition: background 0.3s;
+    font-size: 1.2em;
 }
 
 .navbar a:hover {
-    background: #0055cc;
+    background: #0055aa;
     border-radius: 5px;
 }
 
-/* Polaroid Effect (for Home Page) */
+/* Main Content */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Polaroid Effect */
 .polaroid {
     background: white;
     padding: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    width: 300px;
+    border: 1px solid #ddd;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    width: fit-content;
     margin: 20px auto;
     text-align: center;
 }
 
 .polaroid img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
+    display: block;
 }
 
 .caption {
     font-style: italic;
-    color: #666;
     margin-top: 10px;
+    color: #555;
+}
+
+/* Article List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 1.2em;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 10px;
-    background: #004d99;
+    background: #003366;
     color: white;
     margin-top: 20px;
 }
