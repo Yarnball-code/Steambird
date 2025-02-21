@@ -1,17 +1,14 @@
 [
-  {
-    "title": "Birds, Slime, and a Mitachurl - A Secret Alliance?",
-    "date": "2025-02-19",
-    "content": "Our investigation into Fontaine’s most bizarre creature coalition continues..."
-  },
-  {
-    "title": "The Case of the Vanishing Slimes",
-    "date": "2025-03-19",
-    "content": "Slimes have been disappearing all across Teyvat. What could be causing this?"
-  },
-  {
-    "title": "Timmy’s Pigeons: Are They Spies?",
-    "date": "2025-04-01",
-    "content": "Recent evidence suggests that Timmy’s pigeons might be part of an underground information network. Stay tuned for more."
-  }
+    {
+        "title": "Issue #1 - Fontaine’s Most Bizarre Creature Coalition",
+        "date": "February 14, 2025",
+        "content": "Our investigation into Fontaine’s strangest creatures has led us to uncover shocking truths about deep-sea entities, mechanical guardians, and suspicious gatherings near the Court of Fontaine...",
+        "link": "issue1.html"
+    },
+    {
+        "title": "Issue #2 - Hilichurls Farming & The Ghost Ship Mystery!",
+        "date": "February 21, 2025",
+        "content": "Hilichurls farming, ghost boats, and more chaos unfold as The Steambird investigates strange happenings across Fontaine. Are we witnessing a shift in Hilichurl society? Or is there a deeper conspiracy at play?",
+        "link": "issue2.html"
+    }
 ]
