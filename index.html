@@ -3,37 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Steambird - Home</title>
+    <title>The Steambird</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>The Steambird</h1>
-        <p>Fontaine’s Finest News Source</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="articles.html">Articles</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="submit.html">Submit a Sighting</a>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="issue1.html">Issue #1</a></li>
-            <li><a href="issue2.html">Issue #2</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <h2>Latest Issue</h2>
-            <p>Check out our newest article: <a href="issue2.html">Issue #2 - Hilichurls Farming?</a></p>
-        </section>
-        <section>
-            <h2>Past Issues</h2>
-            <ul>
-                <li><a href="issue1.html">Issue #1 - Birds, Slimes, and a Mitachurl</a></li>
-            </ul>
-        </section>
-    </main>
+    
+    <section id="latest-articles">
+        <h2>Latest Articles</h2>
+        <div class="polaroid">
+            <a href="birds-slime.html">
+                <img src="images/birds-slime.jpg" alt="Birds and Slime Mystery">
+                <p><strong>Birds, Slime, and a Mitachurl - A Secret Alliance?</strong></p>
+                <p>Our investigation into Fontaine’s most bizarre creature coalition...</p>
+            </a>
+        </div>
+        <div class="polaroid">
+            <a href="vanishing-slimes.html">
+                <img src="images/vanishing-slimes.jpg" alt="Vanishing Slimes">
+                <p><strong>The Case of the Vanishing Slimes</strong></p>
+                <p>Slimes have been disappearing all across Teyvat...</p>
+            </a>
+        </div>
+    </section>
+    
     <footer>
-        <p>&copy; 2025 The Steambird. All rights reserved.</p>
+        <p>&copy; 2025 The Steambird. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
