@@ -4,75 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Steambird - Issue #2</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .quote {
+            font-style: italic;
+            margin-top: 20px;
+        }
+        .home-button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .home-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>The Steambird</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="issue1.html">Issue #1</a></li>
-                <li><a href="issue2.html">Issue #2</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <article>
-            <h2>Issue #2</h2>
-            <h3>Breaking News: Hilichurls Start Farming? Teapot Blueprint Discovery Shocks Fontaine!</h3>
-            <p>Fontaine—where justice is served, water is everywhere, and apparently, Hilichurls are now in the agriculture business?</p>
-            <p>Earlier today, The Steambird uncovered a remarkable chest fiercely guarded by a group of Fontaine Hilichurls and a Mitachurl. Expecting riches, artifacts, or even contraband, our reporter braved the danger to reveal the shocking truth: Inside the chest was a teapot blueprint titled "Court of Justice Green Grocers."</p>
-            <p>That’s right. Hilichurls were protecting farming infrastructure.</p>
-            
-            <h3>What Could This Mean?</h3>
-            <ul>
-                <li>Hilichurls turning to agriculture? Could this be a peaceful movement? Are they tired of foraging and looting and ready to settle down into society?</li>
-                <li>A secret black-market produce operation? Is Fontaine's food industry about to face unexpected competition?</li>
-                <li>Court of Justice involvement? The name of the blueprint raises questions—who authorized this? Is the judicial system secretly supporting Hilichurlian self-sufficiency?</li>
-            </ul>
-            
-            <h3>New Developments: The Gardenmek Conspiracy</h3>
-            <p>Following this discovery, our investigation led us to an unusual sight: Gardemeks stationed near a Roger Airship, as well as a lone Roller Mek patrolling the hill above the shore. While their presence may seem routine, the proximity to Hilichurl activity raises questions. Who programmed them? What are they guarding?</p>
-            
-            <h3>Suspicious Treasure Hoarder Activity</h3>
-            <p>A deeper dive led us to a hidden operation near the Court of Fontaine. Multiple Treasure Hoarders were spotted near small boats, one of which was actively being used. Among them, a higher-ranking member with a golden raven insignia was present. Upon their defeat, the leader mysteriously disappeared, leaving behind only a small wooden box with 1,000 Mora floating behind the boat.</p>
-            
-            <h3>The Invisible Ship Mystery</h3>
-            <p>Hidden among shipwrecks, a ghostly blue ship flickered in and out of visibility, vanishing entirely upon close approach. Nearby, a strange floating device hovered above the water. What purpose does it serve? Who controls these spectral vessels?</p>
-            
-            <h3>Investigative Next Steps:</h3>
-            <ul>
-                <li>Track further Treasure Hoarder movements—was this a failed smuggling operation?</li>
-                <li>Study Gardemek behavior—are they really just on routine patrols?</li>
-                <li>Seek expert opinions on the ghostly ship—are we dealing with advanced technology, or something... paranormal?</li>
-            </ul>
-            
-            <h3>Horoscopes</h3>
-            <p>Aries – Your curiosity will lead to exciting discoveries. Just be careful not to get too close to mysterious ghost ships.</p>
-            <p>Taurus – A hidden treasure awaits you… but don’t expect it to be easy to find.</p>
-            <p>Gemini – Stay alert; someone might not be telling you the whole story.</p>
-            
-            <h3>Classifieds</h3>
-            <p>Wanted: Someone to investigate disappearing cargo. Must be quick, discreet, and not afraid of mekas.</p>
-            <p>For Sale: Recently acquired treasure map—totally legit! Contact Théodore.</p>
-            
-            <h3>Celebrity Birthdays</h3>
-            <p>Happy Birthday to Clémentine Aubert, Fontaine’s renowned maritime historian! Here’s to another year of uncovering the ocean’s secrets!</p>
-            
-            <h3>Quote of the Day</h3>
-            <p>“The truth is like water—it finds its way through even the smallest cracks.” – The Steambird Editorial Team</p>
-            
-            <h3>Advertisements</h3>
-            <p>Need Protection? – Hire the best bodyguards Fontaine has to offer. We totally won’t abandon you at the first sign of danger. Call Dane’s Defense Services today!</p>
-            <p>Gardemek Malfunction? – Bring your broken meka to Bernard’s Repair Shop! We promise it won’t attack you after maintenance. Probably.</p>
-            <p>The Steambird Café – Now serving Justice Jellies and Conspiracy Croissants! Visit our stand near the Court of Fontaine.</p>
-        </article>
-    </main>
-    
-    <footer>
-        <p>&copy; 2025 The Steambird. All rights reserved.</p>
+    <div class="container">
+        <h1>The Steambird - Issue #2</h1>
+        <h2>Fontaine’s Finest News Source</h2>
+        
+        <h3>BREAKING NEWS: HILICHURLS START FARMING? TEAPOT BLUEPRINT DISCOVERY SHOCKS FONTAINE!</h3>
+        <p><strong>By: The Steambird Investigative Team</strong></p>
+        <p>Fontaine—where justice is served, water is everywhere, and apparently, Hilichurls are now in the agriculture business?</p>
+        <p>Earlier today, The Steambird uncovered a remarkable chest fiercely guarded by a group of Fontaine Hilichurls and a Mitachurl. Expecting riches, artifacts, or even contraband, our reporter braved the danger to reveal the shocking truth: Inside the chest was a teapot blueprint titled "Court of Justice Green Grocers."</p>
+        <p>That’s right. Hilichurls were protecting farming infrastructure.</p>
+        
+        <h3>WHAT COULD THIS MEAN?</h3>
+        <ul>
+            <li>🌱 Hilichurls turning to agriculture? Could this be a peaceful movement?</li>
+            <li>🍅 A secret black-market produce operation? Is Fontaine's food industry about to face unexpected competition?</li>
+            <li>🏛️ Court of Justice involvement? Who authorized this?</li>
+        </ul>
+        
+        <h3>NEW DEVELOPMENTS: THE GARDENMEK CONSPIRACY</h3>
+        <p>Following this discovery, our investigation led us to an unusual sight: Gardemeks stationed near a Roger Airship, as well as a lone Roller Mek patrolling the hill above the shore. Their proximity to Hilichurl activity raises questions. Who programmed them? What are they guarding?</p>
+        
+        <h3>SUSPICIOUS TREASURE HOARDER ACTIVITY</h3>
+        <p>A deeper dive led us to a hidden operation near the Court of Fontaine. Multiple Treasure Hoarders were spotted near small boats, one of which was actively being used. Among them, a higher-ranking member with a golden raven insignia was present. Upon their defeat, the leader mysteriously disappeared, leaving behind only a small wooden box with 1,000 Mora floating behind the boat.</p>
+        
+        <h3>THE INVISIBLE SHIP MYSTERY</h3>
+        <p>But the biggest shock came from under the waters near the Court of Fontaine. Hidden among shipwrecks, a ghostly blue ship flickered in and out of visibility, vanishing entirely upon close approach. Nearby, a strange floating device hovered above the water. What purpose does it serve?</p>
+        
+        <h3>INVESTIGATIVE NEXT STEPS:</h3>
+        <ul>
+            <li>🔍 Track further Treasure Hoarder movements.</li>
+            <li>🔍 Study Gardemek behavior.</li>
+            <li>🔍 Seek expert opinions on the ghostly ship.</li>
+        </ul>
+        
+        <h3>HOROSCOPES</h3>
+        <ul>
+            <li><strong>Aries:</strong> Your curiosity will lead to exciting discoveries.</li>
+            <li><strong>Taurus:</strong> A hidden treasure awaits you.</li>
+            <li><strong>Gemini:</strong> Stay alert; someone might not be telling you the whole story.</li>
+            <li><strong>Cancer:</strong> Secrets are being unearthed. Are you ready?</li>
+            <li><strong>Leo:</strong> Trust your instincts—especially around rogue mekas.</li>
+            <li><strong>Virgo:</strong> A long-lost truth is about to surface.</li>
+            <li><strong>Libra:</strong> Justice is on your side.</li>
+            <li><strong>Scorpio:</strong> Something unexpected will change your perspective.</li>
+            <li><strong>Sagittarius:</strong> Adventure calls! Try not to get shipwrecked.</li>
+            <li><strong>Capricorn:</strong> The key to your problem is in the details.</li>
+            <li><strong>Aquarius:</strong> Innovation is in your future.</li>
+            <li><strong>Pisces:</strong> The truth is out there.</li>
+        </ul>
+        
+        <h3>CLASSIFIEDS</h3>
+        <ul>
+            <li><strong>WANTED:</strong> Investigator for disappearing cargo cases.</li>
+            <li><strong>FOR SALE:</strong> Recently acquired treasure map—totally legit!</li>
+            <li><strong>MISSING:</strong> My Mora. If found, please return to Lyney.</li>
+        </ul>
+        
+        <h3>CELEBRITY BIRTHDAYS</h3>
+        <p>🎉 Happy Birthday to Clémentine Aubert, Fontaine’s renowned maritime historian!</p>
+        
+        <h3>QUOTE OF THE DAY</h3>
+        <p class="quote">“The truth is like water—it finds its way through even the smallest cracks.” – The Steambird Editorial Team</p>
+        
+        <h3>ADVERTISEMENTS</h3>
+        <ul>
+            <li>💼 Need Protection? – Hire Fontaine’s best bodyguards.</li>
+            <li>⚙️ Gardemek Malfunction? – Visit Bernard’s Repair Shop.</li>
+            <li>🍰 The Steambird Café – Now serving Justice Jellies and Conspiracy Croissants!</li>
+            <li>💎 RARE TREASURE FOR SALE – Contact Laurent for details!</li>
+        </ul>
+        
+        <p><strong>That’s all for now, dear readers! Stay vigilant, stay skeptical, and most importantly—stay informed.</strong></p>
+        
+        <a href="index.html" class="home-button">Back to Home Page</a>
+    </div>
+</body>
+</html>
+
     </footer>
 </body>
 </html>
