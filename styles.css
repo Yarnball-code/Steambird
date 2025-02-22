@@ -1,67 +1,129 @@
-/* General Fixes */
-body {
-    font-family: Arial, sans-serif;
+/* Steambird Styles - Scrapbook Minimal Chaos */
+
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Navbar Consistency */
-nav {
-    background-color: #550066;
-    color: white;
+body {
+    background-color: #fdfaf5;
+    font-family: 'Times New Roman', serif;
+    color: #3d3d3d;
+    padding: 20px;
+}
+
+header {
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
+    border-bottom: 2px solid #b7a995;
 }
 
-nav a {
-    color: white;
+.logo {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #5e4b3c;
+}
+
+.navbar {
+    margin-top: 10px;
+}
+
+.navbar a {
+    margin: 0 15px;
     text-decoration: none;
-    padding: 10px;
+    color: #5e4b3c;
+    font-weight: bold;
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    transition: 0.2s ease;
 }
 
-/* Image Sizing & Polaroid Effect */
+.navbar a:hover {
+    border: 2px solid #5e4b3c;
+    background: #eaddcf;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Polaroid Style for Articles */
 .polaroid {
-    background: white;
+    background: #fff;
     padding: 10px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-    display: inline-block;
-    max-width: 300px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #b7a995;
+    transform: rotate(-2deg);
+    transition: transform 0.2s ease;
 }
 
-img {
+.polaroid img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: auto;
-}
-
-/* Footer Fix */
-footer {
-    background-color: #550066;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Form Alignment Fix */
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
-}
-
-input, textarea {
+    border-bottom: 1px solid #b7a995;
     margin-bottom: 10px;
-    padding: 5px;
 }
 
-/* Reduce Extra Space */
-.container {
-    max-width: 80%;
-    margin: auto;
-    padding-bottom: 20px;
+.polaroid:hover {
+    transform: rotate(0deg);
 }
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #b7a995;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #5e4b3c;
+}
+
+/* Add that scrap-chaos vibe */
+#featured-article {
+    background: #fffaf0;
+    padding: 20px;
+    border: 3px dashed #b7a995;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+#featured-article h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 0px #eaddcf;
+}
+
+/* Let’s go wild with little details */
+#latest-articles::before {
+    content: 'Latest Sightings';
+    font-size: 1.2rem;
+    color: #b7a995;
+    position: absolute;
+    transform: rotate(-5deg);
+    left: 20px;
+    top: -10px;
+    background: #fff;
+    padding: 2px 8px;
+    border: 1px solid #b7a995;
+}
+
+/* Add some randomness */
+.polaroid:nth-child(2n) {
+    transform: rotate(3deg);
+}
+
+.polaroid:nth-child(3n) {
+    transform: rotate(-4deg);
+}
+
+.polaroid:nth-child(4n) {
+    transform: rotate(1deg);
+}
+
+/* That should add the playful, chaotic, scrapbook vibe! Let me know if you want more tweaks! */
