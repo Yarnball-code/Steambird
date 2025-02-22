@@ -1,137 +1,67 @@
-/* General Styles */
+/* General Fixes */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* Navbar Styles */
+/* Navbar Consistency */
 nav {
-    background-color: #4a0072;
-    padding: 10px 0;
+    background-color: #550066;
+    color: white;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: white !important;
+nav a {
+    color: white;
     text-decoration: none;
-    font-size: 18px !important;
-    font-weight: bold !important;
-    padding: 8px 15px;
-    transition: background 0.3s ease-in-out;
+    padding: 10px;
 }
 
-nav ul li a:hover {
-    background: #6a0080;
-    border-radius: 5px;
-}
-
-/* Header Styles */
-h1, h2, h3 {
-    color: #4a0072;
-}
-
-/* Page Content Styling */
-.content {
-    background: white;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Image Styling & Polaroid Restoration */
-.articles-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.articles-container img {
-    max-width: 250px;
-    height: auto;
-    display: block;
-    margin: 10px;
-    border: 5px solid white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-    transform: rotate(-2deg);
-}
-
-.articles-container .article {
+/* Image Sizing & Polaroid Effect */
+.polaroid {
     background: white;
     padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    max-width: 280px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    display: inline-block;
+    max-width: 300px;
 }
 
-/* Footer Styles */
-footer {
-    background: #4a0072;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-footer p {
-    margin: 0;
-    font-size: 14px;
-}
-
-/* Specific Fixes */
-.articles, .calendar, .submit {
-    text-align: center;
-}
-
-.articles img, .calendar img, .submit img {
-    max-width: 250px;
-}
-
-/* Ensure Navbar Consistency */
-nav ul li a {
-    color: white !important;
-    font-size: 18px !important;
-    font-weight: bold !important;
-}
-
-/* Add footer text to articles.html */
-.articles footer::after {
-    content: "All Rights Reserved";
+img {
+    max-width: 100%;
+    height: auto;
     display: block;
-    margin-top: 10px;
-    font-size: 14px;
+    margin: auto;
+}
+
+/* Footer Fix */
+footer {
+    background-color: #550066;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Form Alignment Fix */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+/* Reduce Extra Space */
+.container {
+    max-width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
 }
