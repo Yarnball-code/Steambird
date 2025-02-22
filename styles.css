@@ -16,6 +16,9 @@ nav {
     background-color: #4a0072;
     padding: 10px 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul {
@@ -67,6 +70,29 @@ img {
     margin: 10px auto;
 }
 
+/* Resize Homepage Images */
+.homepage-articles img {
+    max-width: 300px; /* Smaller images */
+    height: auto;
+    display: block;
+}
+
+/* Arrange Articles Side by Side */
+.articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.article {
+    width: 45%;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
 /* Footer Styles */
 footer {
     background: #4a0072;
@@ -85,18 +111,11 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Specific Fixes */
-.articles, .calendar, .submit {
-    text-align: center;
+/* Ensure 'All Rights Reserved' Appears in Articles */
+.articles footer::after {
+    content: "All Rights Reserved";
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
 }
 
-.articles img, .calendar img, .submit img {
-    max-width: 80%;
-}
-
-/* Ensure Navbar Consistency */
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
