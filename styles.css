@@ -1,109 +1,77 @@
-/* General Page Styling */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #333;
     margin: 0;
     padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
-/* Navbar Styling */
-header {
-    background-color: #222;
-    color: white;
-    padding: 15px;
+/* Navbar Styles */
+nav {
+    background-color: #4b0082;
+    padding: 10px;
     text-align: center;
 }
-
-.navbar {
-    display: flex;
-    justify-content: center;
-    background: #333;
-    padding: 10px 0;
-}
-
-.navbar a {
+nav a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
-    font-size: 1.2em;
+    display: inline-block;
 }
-
-.navbar a:hover {
-    background: #555;
+nav a:hover {
+    background-color: #6a0dad;
     border-radius: 5px;
 }
 
-/* Main Content */
+/* Container Styles */
 .container {
-    max-width: 800px;
-    margin: 20px auto;
-    background: white;
+    width: 80%;
+    margin: auto;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2, h3 {
-    color: #222;
-}
-
-/* Polaroid Effect for Home Page */
-.polaroid {
     background: white;
-    padding: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    margin: 20px auto;
-    width: 300px;
-    border-radius: 10px;
-}
-
-.polaroid img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
 
-.caption {
-    font-style: italic;
-    color: #555;
-    margin-top: 10px;
+/* Headings */
+h1, h2, h3 {
+    color: #4b0082;
 }
 
-/* Articles Page Styling */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 10px 0;
-    font-size: 1.1em;
-}
-
-/* Home Page Styling */
-.home-button {
-    display: block;
-    text-align: center;
-    background: #444;
-    color: white;
-    padding: 10px;
+/* Article Styling */
+.article-list a {
+    color: #4b0082;
+    font-weight: bold;
     text-decoration: none;
-    margin-top: 20px;
-    border-radius: 5px;
+}
+.article-list a:hover {
+    text-decoration: underline;
 }
 
-.home-button:hover {
-    background: #666;
+/* Image Resizing for Homepage */
+.home-images img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #222;
-    color: white;
-    margin-top: 20px;
+/* Page-Specific Styles */
+.articles-page .container,
+.calendar-page .container,
+.submit-page .container {
+    text-align: left;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    nav a {
+        display: block;
+        padding: 10px;
+    }
 }
