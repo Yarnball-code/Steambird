@@ -63,21 +63,6 @@ h1, h2, h3 {
 }
 
 /* Image Styling */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-}
-
-/* Resize Homepage Images */
-.homepage-articles img {
-    max-width: 300px; /* Smaller images */
-    height: auto;
-    display: block;
-}
-
-/* Arrange Articles Side by Side */
 .articles-container {
     display: flex;
     flex-wrap: wrap;
@@ -85,12 +70,11 @@ img {
     justify-content: center;
 }
 
-.article {
-    width: 45%;
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+.articles-container img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 10px;
 }
 
 /* Footer Styles */
@@ -111,11 +95,31 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Ensure 'All Rights Reserved' Appears in Articles */
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Specific Fixes */
+.articles, .calendar, .submit {
+    text-align: center;
+}
+
+.articles img, .calendar img, .submit img {
+    max-width: 300px;
+}
+
+/* Ensure Navbar Consistency */
+nav ul li a {
+    color: white !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+}
+
+/* Add footer text to articles.html */
 .articles footer::after {
     content: "All Rights Reserved";
     display: block;
     margin-top: 10px;
     font-size: 14px;
 }
-
