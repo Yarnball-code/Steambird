@@ -51,11 +51,11 @@ header {
 
 .container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     padding: 20px;
-    max-width: 900px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -102,7 +102,7 @@ article ul {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    max-width: 900px;
+    max-width: 1200px;
 }
 
 .polaroid {
@@ -117,7 +117,7 @@ article ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 0 1 calc(33.333% - 20px);
+    flex: 0 1 calc(25% - 20px);
     max-width: 220px;
 }
 
@@ -168,3 +168,4 @@ footer {
     display: block;
     margin: auto;
 }
+
