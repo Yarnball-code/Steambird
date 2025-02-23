@@ -55,34 +55,6 @@ header {
     justify-content: space-around;
 }
 
-/* Newspaper Frame for Articles */
-.article-frame {
-    max-width: 700px;
-    margin: auto;
-    padding: 30px;
-    background: #fff;
-    border: 10px solid #3d3d3d;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    position: relative;
-}
-
-.article-frame::before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    border: 3px dashed #b7a995;
-    pointer-events: none;
-}
-
-.article-content {
-    text-align: justify;
-    line-height: 1.8;
-    font-size: 1.2rem;
-}
-
 /* Fix Navbar in Articles */
 .article-navbar {
     text-align: center;
@@ -147,4 +119,29 @@ footer {
     margin-top: 20px;
     font-size: 0.9rem;
     color: #5e4b3c;
+}
+
+/* Featured Article Section */
+#featured-article {
+    background: #fffaf0;
+    padding: 20px;
+    border: 3px dashed #b7a995;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.05);
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+#featured-article h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 0px #eaddcf;
+}
+
+#featured-article img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    display: block;
+    margin: auto;
 }
