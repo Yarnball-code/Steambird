@@ -51,8 +51,8 @@ header {
 
 .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
     padding: 20px;
 }
@@ -65,8 +65,8 @@ article {
     border: 2px solid #b7a995;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.05);
     text-align: justify;
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    overflow: hidden;
 }
 
 article h1, article h2, article h3 {
@@ -85,7 +85,20 @@ article ul {
     padding-left: 20px;
 }
 
+/* Ensure all content stays inside the article border */
+.article-content {
+    position: relative;
+    padding: 20px;
+}
+
 /* Polaroid Style for Articles */
+.polaroid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
 .polaroid {
     background: #fff;
     padding: 10px;
@@ -96,8 +109,7 @@ article ul {
     width: 220px;
     text-align: center;
     margin: 10px;
-    flex: 1 1 calc(33.333% - 40px);
-    max-width: 300px;
+    display: inline-block;
 }
 
 .polaroid img {
