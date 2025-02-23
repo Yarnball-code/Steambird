@@ -55,6 +55,8 @@ header {
     align-items: center;
     gap: 20px;
     padding: 20px;
+    max-width: 900px;
+    margin: auto;
 }
 
 /* Article Styling */
@@ -65,8 +67,7 @@ article {
     border: 2px solid #b7a995;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.05);
     text-align: justify;
-    position: relative;
-    overflow: hidden;
+    margin: 20px 0;
 }
 
 article h1, article h2, article h3 {
@@ -85,10 +86,14 @@ article ul {
     padding-left: 20px;
 }
 
-/* Ensure all content stays inside the article border */
-.article-content {
-    position: relative;
+/* Fix for Interviews, Horoscopes, and Other Sections */
+.issue-content {
+    border: 2px solid #b7a995;
     padding: 20px;
+    margin: 20px auto;
+    background: #fff;
+    max-width: 800px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.05);
 }
 
 /* Polaroid Style for Articles */
@@ -109,7 +114,6 @@ article ul {
     width: 220px;
     text-align: center;
     margin: 10px;
-    display: inline-block;
 }
 
 .polaroid img {
@@ -124,18 +128,6 @@ article ul {
 
 .polaroid:hover {
     transform: rotate(0deg);
-}
-
-.polaroid:nth-child(2n) {
-    transform: rotate(3deg);
-}
-
-.polaroid:nth-child(3n) {
-    transform: rotate(-4deg);
-}
-
-.polaroid:nth-child(4n) {
-    transform: rotate(1deg);
 }
 
 footer {
