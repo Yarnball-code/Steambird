@@ -62,18 +62,35 @@ header {
     border: 1px solid #b7a995;
     transform: rotate(-2deg);
     transition: transform 0.2s ease;
+    width: 220px; /* Ensures uniform size */
+    text-align: center; /* Keeps caption centered */
 }
 
 .polaroid img {
-    max-width: 100%;
-    height: auto;
+    width: 200px; /* Fixed size for consistency */
+    height: 200px; /* Keeps it square */
+    object-fit: cover; /* Prevents stretching */
     display: block;
+    margin: 0 auto 10px;
     border-bottom: 1px solid #b7a995;
-    margin-bottom: 10px;
+    border-radius: 5px; /* Slightly soft edges for a Polaroid feel */
 }
 
 .polaroid:hover {
     transform: rotate(0deg);
+}
+
+/* Scrapbook Chaos! Keep the tilted randomness */
+.polaroid:nth-child(2n) {
+    transform: rotate(3deg);
+}
+
+.polaroid:nth-child(3n) {
+    transform: rotate(-4deg);
+}
+
+.polaroid:nth-child(4n) {
+    transform: rotate(1deg);
 }
 
 footer {
@@ -85,12 +102,14 @@ footer {
     color: #5e4b3c;
 }
 
-/* Add that scrap-chaos vibe */
+/* Featured Article Section */
 #featured-article {
     background: #fffaf0;
     padding: 20px;
     border: 3px dashed #b7a995;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.05);
+    max-width: 500px;
+    margin: auto;
 }
 
 #featured-article h2 {
@@ -99,7 +118,16 @@ footer {
     text-shadow: 2px 2px 0px #eaddcf;
 }
 
-/* Let’s go wild with little details */
+/* Fix stretched featured article image */
+#featured-article img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    display: block;
+    margin: auto;
+}
+
+/* Latest Articles Section */
 #latest-articles::before {
     content: 'Latest Sightings';
     font-size: 1.2rem;
@@ -113,16 +141,6 @@ footer {
     border: 1px solid #b7a995;
 }
 
-/* Add some randomness */
-.polaroid:nth-child(2n) {
-    transform: rotate(3deg);
-}
-
-.polaroid:nth-child(3n) {
-    transform: rotate(-4deg);
-}
-
-.polaroid:nth-child(4n) {
     transform: rotate(1deg);
 }
 
