@@ -5,6 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Steambird - Calendar</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .events-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .event {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      border-bottom: 1px solid #b7a995;
+      padding: 10px 0;
+      width: 60%;
+    }
+
+    .event-date {
+      font-weight: bold;
+      width: 100px;
+      text-align: right;
+    }
+
+    .event-desc {
+      flex: 1;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -20,11 +47,20 @@
   <main class="container">
       <h1>Upcoming Events & Investigations</h1>
       <p>We are currently tracking mysterious happenings across Fontaine.</p>
-      <ul>
-          <li>📅 March 1: Strange floating structures spotted near the Court of Fontaine.</li>
-          <li>📅 March 10: Investigation into the disappearance of a local fisherman.</li>
-          <li>📅 March 20: New issue of <em>The Steambird</em> releasing soon!</li>
-      </ul>
+      <div class="events-container">
+          <div class="event">
+              <span class="event-date">📅 March 1:</span>
+              <span class="event-desc">Strange floating structures spotted near the Court of Fontaine.</span>
+          </div>
+          <div class="event">
+              <span class="event-date">📅 March 10:</span>
+              <span class="event-desc">Investigation into the disappearance of a local fisherman.</span>
+          </div>
+          <div class="event">
+              <span class="event-date">📅 March 20:</span>
+              <span class="event-desc">New issue of <em>The Steambird</em> releasing soon!</span>
+          </div>
+      </div>
   </main>
 
   <footer>
@@ -34,4 +70,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
