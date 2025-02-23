@@ -102,6 +102,8 @@ article ul {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    max-width: 900px;
+    margin: auto;
 }
 
 .polaroid {
@@ -114,7 +116,9 @@ article ul {
     width: 220px;
     text-align: center;
     margin: 10px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .polaroid img {
