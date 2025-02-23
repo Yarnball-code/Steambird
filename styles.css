@@ -55,34 +55,51 @@ header {
     justify-content: space-around;
 }
 
-/* Newspaper Frame Around Articles */
+/* Newspaper Frame for Articles */
 .article-frame {
-    border: 5px double #3d3d3d;
-    padding: 20px;
-    margin: 20px auto;
     max-width: 700px;
+    margin: auto;
+    padding: 30px;
     background: #fff;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    border: 10px solid #3d3d3d;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     position: relative;
 }
 
-.article-frame::before, .article-frame::after {
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background: url('newspaper-corner.png') no-repeat center;
-    background-size: contain;
-}
-
 .article-frame::before {
+    content: "";
+    position: absolute;
     top: -10px;
     left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 3px dashed #b7a995;
+    pointer-events: none;
 }
 
-.article-frame::after {
-    bottom: -10px;
-    right: -10px;
+.article-content {
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 1.2rem;
+}
+
+/* Fix Navbar in Articles */
+.article-navbar {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.article-navbar a {
+    text-decoration: none;
+    color: #5e4b3c;
+    font-weight: bold;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s ease;
+}
+
+.article-navbar a:hover {
+    border-bottom: 2px solid #5e4b3c;
 }
 
 /* Polaroid Style for Articles */
@@ -111,7 +128,6 @@ header {
     transform: rotate(0deg);
 }
 
-/* Scrapbook Chaos! Keep the tilted randomness */
 .polaroid:nth-child(2n) {
     transform: rotate(3deg);
 }
@@ -131,36 +147,4 @@ footer {
     margin-top: 20px;
     font-size: 0.9rem;
     color: #5e4b3c;
-}
-
-/* Featured Article Section */
-#featured-article {
-    background: #fffaf0;
-    padding: 20px;
-    border: 3px dashed #b7a995;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.05);
-    max-width: 500px;
-    margin: auto;
-}
-
-#featured-article h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 0px #eaddcf;
-}
-
-/* Fix stretched featured article image */
-#featured-article img {
-    width: 100%;
-    height: auto;
-    max-width: 300px;
-    display: block;
-    margin: auto;
-}
-
-/* Style Navbar in Articles Properly */
-.article-frame .navbar a {
-    color: #3d3d3d;
-    font-size: 1rem;
-    text-decoration: underline;
 }
